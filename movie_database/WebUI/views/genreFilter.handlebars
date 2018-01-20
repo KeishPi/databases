@@ -1,0 +1,43 @@
+<h1>Movies Database</h1>
+<h2>Movies By Genre</h2>
+<div class="green">
+  <!-- <legend>View movies by genre</legend> -->
+  <p></br><p>
+  <form method="GET" action="/moviesByGenre" id="viewByGenre">
+    <label for="genreFilter">Genre</label>
+      <select name="genreFilter" id="genreFilter" form="viewByGenre">
+        {{#if genres}}
+          {{#each genres}}
+              <option value={{this.genre_type}}>{{this.genre_type}}</option>
+          {{/each}}
+        {{/if}}
+      </select>
+      <input type="submit" name="viewByGenre" form="viewByGenre" value="View Movies By Genre"/>
+      <p></br><p>
+      <div>
+	<p>Movies</p>
+        <table>
+          <tr>
+            <th>ID</th> <th>Title</th> <th>Release Year</th> <th>Description</th> <th>Rating</th> <th>Director Name</th>
+          </tr>
+          {{#if genreFilterMovies}}
+            {{#each genreFilterMovies}}
+            <tr>
+              <td align="center">{{this.movie_id}}</td>
+              <td>{{this.title}}</td>
+              <td align="center">{{this.release_year}}</td>
+              <td>{{this.description}}</td>
+              <td align="center">{{this.rating}}</td>
+              <td align="center">{{this.dir_name}}</td>
+            </tr>
+            {{/each}}
+          {{/if}}
+        </table>
+      </div>
+      <p></br><p>
+     <div>
+    <!-- <form id="goBackForm"> -->
+    <!-- <button  type="submit" method="GET" action="/goBack" id="backButton" name="backButton" form="goBackForm">Go Back</button> -->
+    </div> 
+  </form>
+</div>

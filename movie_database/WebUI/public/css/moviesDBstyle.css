@@ -1,0 +1,117 @@
+html, body, div, p {
+    padding:3px; 
+    margin:0px;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px 8px;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+}
+
+caption {
+    padding: 8px;
+    font-family: 'Varela', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+legend {
+    font-family: 'Varela', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+button {
+   padding-right: 5px;
+}
+
+body {
+  position: relative;
+  left: 36px;
+  top: 18px;
+  font-family: 'Varela', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #656565;
+  height: 100%;
+}
+
+table {
+  position: relative;
+  align-self: center;
+  padding:20px;
+  border-collapse: collapse;
+}
+
+.container {
+    overflow: hidden;
+    margin: 0em auto;
+    width: 1000px;
+}
+
+#featured {
+    overflow: hidden;
+    padding: 5em 0em;
+    background: #009E2D;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+.filter {
+    position:relative;
+    overflow:hidden;
+    //padding: 3px 8px;
+    padding:20px;
+    margin:2em 3%;
+    width: 80%;
+    //color: #fff;
+    //background: #FF4136; /*red*/
+}
+
+.green {
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    //padding: 5em 0em;
+    margin:2em 3%;
+    width: 90%;
+    color: #fff;
+    background: #33cc33; 
+}
+
+.aqua {
+    position:relative;
+    overflow:hidden; 
+    padding:20px;
+    margin:2em 3%;
+    width: 90%;
+    color: #fff;
+    background: #00cccc;
+}
+
+.blue {
+    position:relative;
+    overflow:hidden; 
+    padding:20px;
+    margin:2em 3%;
+    width: 90%;
+    color: #fff;
+    background: #3366ff; 
+}
+
+.title {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin: 0em auto;
+    //margin:2em 3%;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    //background: #009E2D;
+    background: #b3b3b3;
+}
+

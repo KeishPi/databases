@@ -1,0 +1,33 @@
+<h1>Movies Database</h1>
+<h2>View an Actors Roles</h2>
+<div class="green">
+  <h3>Actor Information</h3>
+  <table>
+    <tr>
+      <th>ID</th> <th>Name</th><th>Gender</th><th>DOB</th>
+    </tr>
+    {{#if actor}}
+      {{#each actor}}
+        <tr>
+          <td align="center">{{this.actor_id}}</td>
+          <td>{{this.actor_name}}</td>
+          <td>{{this.actor_gender}}</td>
+          <td>{{this.actor_dob}}</td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+  <table>
+    <tr>
+      <th align="left">Movie</th> <th align="left">Role</th>
+    </tr>
+      {{#if chars}}
+        {{#each chars}}
+	  <tr>
+            <td>{{this.movie_title}}</td>
+            <td>{{this.char_name}}</td>
+	  </tr>
+        {{/each}}
+      {{/if}}
+  </table>
+</div>
